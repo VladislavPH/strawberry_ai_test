@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en" data-color-scheme="light">
+<head>
+
+	
+	
+	<base href="https://strawberry.ai/">
+	
+	
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent">
+	<meta name="format-detection" content="telephone=no">
+
+	
+	<script>
+		window.process = { env: {} };
+		window.global = window;
+	</script>
+
+	
+	<script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js?_v=20250422142924"></script>
+
+	
+	<script>(function (w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start':
+				new Date().getTime(), event: 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src =
+			'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-P6KHNMD5');</script>
+	
+
+	<link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+	<link rel="shortcut icon" href="assets/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+	<meta name="apple-mobile-web-app-title" content="Strawberry">
+	<link rel="manifest" href="assets/favicon/site.webmanifest">
+
+	
+	<title>Personality is the new protocol</title>
+	<meta name="description" content="Strawberry AI That's More Than AI.">
+	
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="strawberry.ai">
+	<meta property="og:description" content="Strawberry AI That's More Than AI.">
+	<meta property="og:image" content="https://strawberry.ai/assets/og/card.jpeg">
+
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="strawberry.ai">
+	<meta name="twitter:description" content="Strawberry AI That's More Than AI.">
+	<meta name="twitter:image" content="https://strawberry.ai/assets/og/card.jpeg">
+	
+
+	
+
+	
+
+	
+	<link rel="stylesheet" href="assets/css/main.css?_v=20250422142924">
+
+</head>
+<body>
+
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6KHNMD5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+
+
+<header class="site-header">
+
+
+	<div class="site-header__left">
+
+		<a href="/" class="site-logo">
+			<img src="assets/img/logo.svg" data-light-theme height="32" loading="eager" fetchpriority="high" decoding="sync" alt="">
+			<img src="assets/img/logo-dark.svg" data-dark-theme height="32" loading="eager" fetchpriority="high" decoding="sync" alt="">
+		</a>
+	</div>
+
+	<div class="site-header__center">
+		<nav class="site-nav">
+			<ul>
+				<li><a href="index.html"><span>Home</span></a></li>
+				<li><a href="/job"><span>Hiring</span></a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="site-header__right">
+		<div class="header-actions">
+						 
+		</div>
+		<ul class="socials">
+	
+	<li>
+		<a href="https://x.com/strawberrydotai" target="_blank" title="X" aria-label="X">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M12.6558 16.0587L2.66602 4H10.5786L16.7452 11.4531L23.3333 4.03356H27.6911L18.8523 13.9998L29.3327 26.6667H21.4437L14.7665 18.6066L7.63797 26.6443H3.25651L12.6558 16.0587ZM22.5936 24.4324L7.51776 6.23427H9.42785L24.4847 24.4324H22.5936Z" fill="#929292"/>
+			</svg>
+		</a>
+	</li>
+
+	
+	<li>
+		<a href="https://t.me/strawberrydotai" target="_blank" title="Telegram" aria-label="Telegram">
+			<svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+				<path d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z"/>
+			</svg>
+		</a>
+	</li>
+
+	
+	<li>
+		<a href="https://discord.gg/strawberrydotai" target="_blank" title="Discord" aria-label="Discord">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M26.6436 6.00999C24.6585 5.071 22.5359 4.38858 20.3168 4C20.0443 4.49814 19.7259 5.16815 19.5064 5.70115C17.1474 5.34249 14.8102 5.34249 12.4946 5.70115C12.2751 5.16815 11.9495 4.49814 11.6745 4C9.45305 4.38858 7.32804 5.07351 5.34293 6.01497C1.33895 12.132 0.253535 18.0972 0.796242 23.9776C3.45189 25.9826 6.02554 27.2005 8.55575 27.9975C9.18047 27.1283 9.73764 26.2042 10.2176 25.2304C9.30348 24.8792 8.42791 24.4459 7.60061 23.9427C7.82009 23.7784 8.03478 23.6065 8.24219 23.4296C13.2882 25.8157 18.7707 25.8157 23.7564 23.4296C23.9663 23.6065 24.1809 23.7784 24.398 23.9427C23.5682 24.4483 22.6903 24.8817 21.7761 25.2329C22.2561 26.2042 22.8109 27.1308 23.438 28C25.9707 27.203 28.5467 25.9851 31.2023 23.9776C31.8391 17.1607 30.1145 11.2503 26.6436 6.00999ZM10.9051 20.3612C9.39033 20.3612 8.14811 18.9315 8.14811 17.1906C8.14811 15.4496 9.3638 14.0175 10.9051 14.0175C12.4464 14.0175 13.6886 15.4471 13.662 17.1906C13.6644 18.9315 12.4464 20.3612 10.9051 20.3612ZM21.0935 20.3612C19.5788 20.3612 18.3366 18.9315 18.3366 17.1906C18.3366 15.4496 19.5522 14.0175 21.0935 14.0175C22.6348 14.0175 23.877 15.4471 23.8505 17.1906C23.8505 18.9315 22.6348 20.3612 21.0935 20.3612Z" fill="#929292"/>
+			</svg>
+		</a>
+	</li>
+</ul>
+
+		<button aria-label="Open Navigation" class="btn-toggle-nav">
+			<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M1 1H17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M1 8H17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M1 15H17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+	</div>
+
+</header>
+
+<div class="site-header__mobile">
+
+	<div class="site-header__mobile-top">
+		<button aria-label="Close Navigation" class="btn-close-nav">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M5 5L19 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+				<path d="M19 5L5 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+		</button>
+	</div>
+
+	<div class="site-header__mobile-body">
+		<nav class="site-nav">
+			<ul>
+				<li><a href="index.html"><span>Home</span></a></li>
+				<li><a href="/job"><span>Hiring</span></a></li>
+			</ul>
+		</nav>
+		<ul class="socials">
+	
+	<li>
+		<a href="https://x.com/strawberrydotai" target="_blank" title="X" aria-label="X">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M12.6558 16.0587L2.66602 4H10.5786L16.7452 11.4531L23.3333 4.03356H27.6911L18.8523 13.9998L29.3327 26.6667H21.4437L14.7665 18.6066L7.63797 26.6443H3.25651L12.6558 16.0587ZM22.5936 24.4324L7.51776 6.23427H9.42785L24.4847 24.4324H22.5936Z" fill="#929292"/>
+			</svg>
+		</a>
+	</li>
+
+	
+	<li>
+		<a href="https://t.me/strawberrydotai" target="_blank" title="Telegram" aria-label="Telegram">
+			<svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+				<path d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z"/>
+			</svg>
+		</a>
+	</li>
+
+	
+	<li>
+		<a href="https://discord.gg/strawberrydotai" target="_blank" title="Discord" aria-label="Discord">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M26.6436 6.00999C24.6585 5.071 22.5359 4.38858 20.3168 4C20.0443 4.49814 19.7259 5.16815 19.5064 5.70115C17.1474 5.34249 14.8102 5.34249 12.4946 5.70115C12.2751 5.16815 11.9495 4.49814 11.6745 4C9.45305 4.38858 7.32804 5.07351 5.34293 6.01497C1.33895 12.132 0.253535 18.0972 0.796242 23.9776C3.45189 25.9826 6.02554 27.2005 8.55575 27.9975C9.18047 27.1283 9.73764 26.2042 10.2176 25.2304C9.30348 24.8792 8.42791 24.4459 7.60061 23.9427C7.82009 23.7784 8.03478 23.6065 8.24219 23.4296C13.2882 25.8157 18.7707 25.8157 23.7564 23.4296C23.9663 23.6065 24.1809 23.7784 24.398 23.9427C23.5682 24.4483 22.6903 24.8817 21.7761 25.2329C22.2561 26.2042 22.8109 27.1308 23.438 28C25.9707 27.203 28.5467 25.9851 31.2023 23.9776C31.8391 17.1607 30.1145 11.2503 26.6436 6.00999ZM10.9051 20.3612C9.39033 20.3612 8.14811 18.9315 8.14811 17.1906C8.14811 15.4496 9.3638 14.0175 10.9051 14.0175C12.4464 14.0175 13.6886 15.4471 13.662 17.1906C13.6644 18.9315 12.4464 20.3612 10.9051 20.3612ZM21.0935 20.3612C19.5788 20.3612 18.3366 18.9315 18.3366 17.1906C18.3366 15.4496 19.5522 14.0175 21.0935 14.0175C22.6348 14.0175 23.877 15.4471 23.8505 17.1906C23.8505 18.9315 22.6348 20.3612 21.0935 20.3612Z" fill="#929292"/>
+			</svg>
+		</a>
+	</li>
+</ul>
+
+	</div>
+
+</div>
+
+<main class="site-content">
+
+
+
+<div class="page-personality">
+	<section class="section-hero">
+		<div class="container">
+			<div class="section-head">
+				<h1 class="page-title">
+					Personality is <br class="hidden-on-tablet">
+					The New Protocol
+				</h1>
+				<div class="editor">
+					<p>
+						Meet unique AI personalities living on Solana — each one
+						designed to connect, remember, and evolve with you in
+						ways no technology has before.
+					</p>
+				</div>
+				<div class="btn-group">
+					<a href="#" class="btn btn-primary btn-modal-form">
+						<span class="caption">Get notified</span>
+						<span class="icon">
+							<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.00004 5L13 10L8 15" stroke="white" stroke-width="1.7" stroke-miterlimit="16" stroke-linecap="square" stroke-linejoin="round"/>
+							</svg>
+						</span>
+					</a>
+					<a href="#" id="connect-wallet-button" onclick="connectPhantomWallet()" class="btn btn-secondary">Connect Wallet</a>
+					<a href="/whitepaper.pdf" target="_blank" class="btn btn-secondary">
+						<span class="caption">Read Whitepaper</span>
+					</a>
+				</div>
+				<div style="display: flex; align-items: center; justify-content: center; margin: 20px 0;">
+					<button id="decrease-quantity" style="width: 24px; border-radius: 100%; height: 24px; border: 1px solid purple; background: transparent; color: purple; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0; margin: 0;">-</button>
+					<button class="btn btn-primary" id="mint-nft-button" style="background-color: purple; color: white; border: none; padding: 10px 20px; cursor: pointer; margin: 0 10px;">
+						Mint <span id="mint-quantity" style="min-width: 10px; text-align: center; font-weight: 500;">1</span> NFT
+					</button>
+					<button id="increase-quantity" style="width: 24px; height: 24px; border: 1px solid purple; background: transparent; color: purple; border-radius: 100%; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0; margin: 0;">+</button>
+				</div>
+			</div>
+
+			<picture class="aura-showcase">
+				<img src="assets/img/aura-showcase.svg" alt="">
+			</picture>
+		</div>
+	</section>
+
+	<section class="section-about">
+		<div class="container">
+			<h2 class="section-title">
+				What is <img src="assets/img/strawberry.svg" alt="">.ai
+			</h2>
+			<div class="editor">
+				<p>
+					Strawberry is a small, smart companion you can carry with
+					you. It listens, learns your habits, remembers important
+					things, joins conversations, or just keeps you
+					company—feeling less like a gadget and more like a part of
+					your life.
+				</p>
+			</div>
+
+			<picture><img src="assets/img/preview.jpg" class="preview-img" alt=""></picture>
+		</div>
+	</section>
+
+	<div class="container">
+		<hr>
+	</div>
+
+	<div class="container">
+		<hr>
+	</div>
+
+	<section class="section-ai-soul">
+		<div class="container">
+			<h2 class="section-title">Unique AI Souls</h2>
+
+			<div class="editor">
+				<p>
+					We've created NFTs with unique personalities based on
+					scientific models. Each token gives your AI companion a
+					different character. Pair with your Strawberry device to
+					instantly get a companion with its own distinctive
+					personality.
+				</p>
+			</div>
+
+			<div class="virtues-cols">
+				<div class="virtue-col">
+					<ul>
+						<li>Openness</li>
+						<li>Conscientiousness</li>
+						<li>Extraversion</li>
+						<li>Agreeableness</li>
+						<li>Neuroticism</li>
+						<li>Machiavellianism</li>
+						<li>Narcissism</li>
+					</ul>
+				</div>
+				<div class="virtue-col">
+					<ul>
+						<li>Psychopathy</li>
+						<li>Emotional Intensity</li>
+						<li>Emotional Stability</li>
+						<li>Emotional Expression</li>
+						<li>Communication Style</li>
+						<li>Humor Style</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="editor">
+				<p>
+					Companions with NFTs start with fully-formed personalities
+					on day one. They feature distinctive traits and unique
+					combinations impossible to develop naturally, giving you an
+					immediate, one-of-a-kind experience.
+				</p>
+			</div>
+
+			<div class="aura-grid">
+				<div class="aura-card">
+					<div class="aura-card__img">
+						<img src="assets/img/aura/1.svg" alt="">
+					</div>
+					<h3 class="aura-card__title">Common - 50%</h3>
+					<div class="aura-card__description">
+						Balanced and relatable personalities
+					</div>
+				</div>
+				<div class="aura-card">
+					<div class="aura-card__img">
+						<img src="assets/img/aura/2.svg" alt="">
+					</div>
+					<h3 class="aura-card__title">Uncommon - 30%</h3>
+					<div class="aura-card__description">
+						Specialized, distinctive combinations
+					</div>
+				</div>
+				<div class="aura-card">
+					<div class="aura-card__img">
+						<img src="assets/img/aura/3.svg" alt="">
+					</div>
+					<h3 class="aura-card__title">Rare - 15%</h3>
+					<div class="aura-card__description">
+						Distinctive and complex contradictions
+					</div>
+				</div>
+				<div class="aura-card">
+					<div class="aura-card__img">
+						<img src="assets/img/aura/4.svg" alt="">
+					</div>
+					<h3 class="aura-card__title">Legendary - 5%</h3>
+					<div class="aura-card__description">
+						Extreme traits and unexpected behaviors
+					</div>
+				</div>
+			</div>
+
+			<div class="btn-group">
+				<a href="/whitepaper.pdf" target="_blank" class="btn btn-secondary">
+					<span class="caption">Read Whitepaper</span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-genesis-edition">
+		<div class="container">
+			<h2 class="section-title h2-5">Each NFT Grants</h2>
+			<div class="ge-grid">
+				<div class="ge-grid-card--large">
+					<div class="col-product">
+						<picture><img src="assets/img/product.jpg" alt=""></picture>
+					</div>
+					<div class="col-info">
+						<div class="content-inner">
+							<h2 class="h3-5 card-title">
+								A Genesis Edition device (MSRP $149)
+							</h2>
+							<div class="editor card-description">
+								<p>
+									A limited-batch release with unique design
+									elements
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ge-grid-card">
+					<img src="assets/img/strawberry.svg" alt="">
+					<div class="caption">Unique Companion Experience</div>
+				</div>
+				<div class="ge-grid-card">
+					<img src="assets/img/strawberry.svg" alt="">
+					<div class="caption">Entry into a community ecosystem</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-community">
+		<div class="container">
+			<h2 class="section-title">Community first</h2>
+			<div class="editor">
+				<p>
+					The NFT component is an experiment fully handed over to the
+					community. While we provide the initial infrastructure,
+					future development and governance are community-driven. Our
+					core team remains focused on hardware and AI infrastructure.
+				</p>
+			</div>
+
+			<div class="h4 section-caption">
+				We're allocating 10% of all funds to a community treasury —
+				giving you real power to build, create, and evolve the
+				personality layer of Strawberry.ai
+			</div>
+
+			<div class="community-list">
+				<div class="community-list__item">
+					<div class="community-list__item-icon">
+						<img src="assets/img/strawberry.svg" alt="">
+					</div>
+					<div class="community-list__item-info">
+						<strong class="community-list__item-title">Create</strong>
+						<div class="editor">
+							<p>
+								Build new NFT collections based on the
+								personality traits, explore gamification
+								mechanics and design new games.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="community-list__item">
+					<div class="community-list__item-icon">
+						<img src="assets/img/strawberry.svg" alt="">
+					</div>
+					<div class="community-list__item-info">
+						<strong class="community-list__item-title">Govern</strong>
+						<div class="editor">
+							<p>
+								Form a DAO, vote on features, direct treasury
+								funds, shape ecosystem partnerships.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="community-list__item">
+					<div class="community-list__item-icon">
+						<img src="assets/img/strawberry.svg" alt="">
+					</div>
+					<div class="community-list__item-info">
+						<strong class="community-list__item-title">Connect</strong>
+						<div class="editor">
+							<p>
+								Team up for AI competitions, host
+								multi-companion events, build cross-project
+								integrations.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container">
+		<hr>
+	</div>
+
+	<section class="section-roadmap">
+		<div class="container">
+			<h2 class="section-title">Roadmap</h2>
+
+			<div class="roadmap-grid">
+				<div class="roadmap-item">
+					<h3 class="roadmap-title">NFT Foundation</h3>
+					<div class="roadmap-date">Q2 2025</div>
+					<div class="editor">
+						<ul class="roadmap-list">
+							<li>NFT mint (whitelist and public)</li>
+							<li>Establish basic governance framework</li>
+							<li>Initialize community development fund</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="roadmap-item">
+					<h3 class="roadmap-title">Community Handoff</h3>
+					<div class="roadmap-date">Q3-Q4 2025</div>
+					<div class="editor">
+						<ul class="roadmap-list">
+							<li>Genesis device distribution to NFT holders</li>
+							<li>
+								Launch standard edition devices to general
+								market
+							</li>
+							<li>Expand developer ecosystem and resources</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="roadmap-item">
+					<h3 class="roadmap-title">The Future</h3>
+					<div class="roadmap-date">2026-2027</div>
+					<div class="editor">
+						<ul class="roadmap-list">
+							<li>Strawberry.ai future developments</li>
+							<li>Community governance expansion</li>
+							<li>Developer ecosystem expansion</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container">
+		<hr>
+	</div>
+
+	<section class="section-vision">
+		<div class="container">
+			<div class="section-head">
+				<h2 class="section-title">Vision for the Future</h2>
+
+				<div class="editor">
+					<p>
+						Strawberry.ai isn't just technology — it's a new era of
+						meaningful digital companionship. We deliver
+						groundbreaking hardware, advanced AI, and a framework
+						for community innovation, then hand you the reins.
+					</p>
+				</div>
+
+				<div class="btn-group">
+					<a href="#" class="btn btn-primary btn-modal-form">
+						<span class="caption">Get notified</span>
+						<span class="icon">
+							<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.00004 5L13 10L8 15" stroke="white" stroke-width="1.7" stroke-miterlimit="16" stroke-linecap="square" stroke-linejoin="round"/>
+							</svg>
+						</span>
+					</a>
+
+					<a href="/whitepaper.pdf" target="_blank" class="btn btn-secondary">
+						<span class="caption">Read Whitepaper</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+</main>
+
+<footer class="site-footer">
+	<div class="site-footer__left">
+		<a href="/policy" class="policy-link">Privacy Policy</a>
+	</div>
+	<div class="site-footer__center">
+		<p class="copyright">All rights reserved</p>
+	</div>
+	<div class="site-footer__right">
+		<ul class="socials">
+	
+	<li>
+		<a href="https://x.com/strawberrydotai" target="_blank" title="X" aria-label="X">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M12.6558 16.0587L2.66602 4H10.5786L16.7452 11.4531L23.3333 4.03356H27.6911L18.8523 13.9998L29.3327 26.6667H21.4437L14.7665 18.6066L7.63797 26.6443H3.25651L12.6558 16.0587ZM22.5936 24.4324L7.51776 6.23427H9.42785L24.4847 24.4324H22.5936Z" fill="#929292"/>
+			</svg>
+		</a>
+	</li>
+
+	
+	<li>
+		<a href="https://t.me/strawberrydotai" target="_blank" title="Telegram" aria-label="Telegram">
+			<svg fill="#000000" width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+				<path d="M29.919 6.163l-4.225 19.925c-0.319 1.406-1.15 1.756-2.331 1.094l-6.438-4.744-3.106 2.988c-0.344 0.344-0.631 0.631-1.294 0.631l0.463-6.556 11.931-10.781c0.519-0.462-0.113-0.719-0.806-0.256l-14.75 9.288-6.35-1.988c-1.381-0.431-1.406-1.381 0.288-2.044l24.837-9.569c1.15-0.431 2.156 0.256 1.781 2.013z"/>
+			</svg>
+		</a>
+	</li>
+
+	
+	<li>
+		<a href="https://discord.gg/strawberrydotai" target="_blank" title="Discord" aria-label="Discord">
+			<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M26.6436 6.00999C24.6585 5.071 22.5359 4.38858 20.3168 4C20.0443 4.49814 19.7259 5.16815 19.5064 5.70115C17.1474 5.34249 14.8102 5.34249 12.4946 5.70115C12.2751 5.16815 11.9495 4.49814 11.6745 4C9.45305 4.38858 7.32804 5.07351 5.34293 6.01497C1.33895 12.132 0.253535 18.0972 0.796242 23.9776C3.45189 25.9826 6.02554 27.2005 8.55575 27.9975C9.18047 27.1283 9.73764 26.2042 10.2176 25.2304C9.30348 24.8792 8.42791 24.4459 7.60061 23.9427C7.82009 23.7784 8.03478 23.6065 8.24219 23.4296C13.2882 25.8157 18.7707 25.8157 23.7564 23.4296C23.9663 23.6065 24.1809 23.7784 24.398 23.9427C23.5682 24.4483 22.6903 24.8817 21.7761 25.2329C22.2561 26.2042 22.8109 27.1308 23.438 28C25.9707 27.203 28.5467 25.9851 31.2023 23.9776C31.8391 17.1607 30.1145 11.2503 26.6436 6.00999ZM10.9051 20.3612C9.39033 20.3612 8.14811 18.9315 8.14811 17.1906C8.14811 15.4496 9.3638 14.0175 10.9051 14.0175C12.4464 14.0175 13.6886 15.4471 13.662 17.1906C13.6644 18.9315 12.4464 20.3612 10.9051 20.3612ZM21.0935 20.3612C19.5788 20.3612 18.3366 18.9315 18.3366 17.1906C18.3366 15.4496 19.5522 14.0175 21.0935 14.0175C22.6348 14.0175 23.877 15.4471 23.8505 17.1906C23.8505 18.9315 22.6348 20.3612 21.0935 20.3612Z" fill="#929292"/>
+			</svg>
+		</a>
+	</li>
+</ul>
+
+	</div>
+</footer>
+
+
+
+<div class="modal" id="modal-form" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+			<div class="modal-inner">
+
+				<button aria-label="Close Modal" class="btn-close-modal" data-micromodal-close="">
+
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M5 5L19 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M19 5L5 19" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+					</svg>
+
+				</button>
+
+				<p class="h1 modal-title">Love is Real <br>And It Lives Inside <img src="assets/img/strawberry.svg" alt=""></p>
+
+				<div class="editor">
+					<p>
+						When was the last time tech made You feel something?
+					</p>
+				</div>
+
+				<div class="form-wrap">
+					<div class="sib-form">
+						<div id="sib-form-container" class="sib-form-container">
+
+							<div id="sib-container" class="sib-container--large sib-container--vertical">
+								<form id="sib-form" class="form" method="POST" action="https://72853158.sibforms.com/serve/MUIFADcdG3dOXMgVTskaJjSoq_gTe0UHyvYzo36rOOjbXH1ZDMBcMqOyb1s1eBJrYCcIOB4g9BlGMqBYHt5zKYdFKmTRakoj_7O_ZaOFbjbQzy_B8LbzbUIUT4_F7B6Lnfc3tte4t9Y0N-CRxQ3uyt9ImSHOP7vRJOdbZWWTMgNczbJiMPQjx15pXi1nU61WRSSN-QvidVci2PSC" data-type="subscription">
+									<div class="form-inner">
+										<div class="sib-input sib-form-block">
+											<div class="form__entry entry_block">
+												<div class="form__label-row">
+													<div class="entry__field">
+														<input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Your email" data-required="true" required>
+													</div>
+												</div>
+												<label class="entry__error entry__error--primary">
+												</label>
+											</div>
+										</div>
+										<div class="sib-form-block">
+											<button class="btn btn-primary sib-form-block__button sib-form-block__button-with-loader" form="sib-form" type="submit">
+												<svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+													<path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/>
+												</svg>
+												Get notified
+											</button>
+										</div>
+									</div>
+									<div class="sib-captcha sib-form-block">
+										<div class="form__entry entry_block">
+											<div class="form__label-row">
+												<script>
+													function handleCaptchaResponse() {
+														var event = new Event('captchaChange');
+														document.getElementById('sib-captcha').dispatchEvent(event);
+														window.grecaptcha = window.turnstile;
+													}
+												</script>
+												<div class="cf-turnstile g-recaptcha" data-sitekey="0x4AAAAAAA1UdTpiaVVMrVb2" id="sib-captcha" data-callback="handleCaptchaResponse" data-language="en"></div>
+											</div>
+											<label class="entry__error entry__error--primary">
+											</label>
+										</div>
+									</div>
+									<input type="text" name="email_address_check" value="" class="input--hidden">
+									<input type="hidden" name="locale" value="en">
+								</form>
+							</div>
+
+							<div id="error-message" class="sib-form-message-panel">
+								<div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+									<svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+										<path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"/>
+									</svg>
+									<span class="sib-form-message-panel__inner-text">
+                          Your subscription could not be saved. Please try again.
+                      </span>
+								</div>
+							</div>
+							<div id="success-message" class="sib-form-message-panel">
+								<div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+									<svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+										<path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"/>
+									</svg>
+									<span class="sib-form-message-panel__inner-text">
+                          Your subscription has been successful.
+                      </span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					
+
+					
+					<script>
+						window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+						window.LOCALE = 'en';
+						window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+
+						window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+
+						window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+
+
+						window.translation = {
+							common: {
+								selectedList: '{quantity} list selected',
+								selectedLists: '{quantity} lists selected'
+							}
+						};
+
+						var AUTOHIDE = Boolean(0);
+					</script>
+					<script defer="defer" src="https://sibforms.com/forms/end-form/build/main.js?_v=20250422142924"></script>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="assets/js/main.js?_v=20250422142924"></script>
+
+</body>
+</html>
+
